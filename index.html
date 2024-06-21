@@ -3,40 +3,43 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+  <link rel="icon" type="image/svg+xml" href="./public/logo.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Twitter character counter</title>
-  <link rel="stylesheet" href="/style.css" />
+  <link rel="stylesheet" href="./style.css" />
 </head>
 
 <body>
   <div id="app">
     <main class="main-container">
-      <img src="/profile.jpg" class="profile" />
+      <img src="./public/profile.jpg" class="profile" />
       <section class="upper-content">
-        Everyone <img src="/arrow-down.svg" class="arrow-down">
+        Everyone <img src="./public/arrow-down.svg" class="arrow-down">
       </section>
       <textarea placeholder="What is happening?!"></textarea>
-      <section class="lower-content"> <img src="/world.svg" /> Everyone can reply</section>
+      <section class="lower-content"> <img src="./public/world.svg" /> Everyone can reply</section>
       <div class="post-options">
         <section class="icons-container">
-          <img src="/image.svg" />
-          <img src="/gif.svg" />
-          <img src="/poll.svg" />
-          <img src="/smile.svg" />
-          <img src="/calendar.svg" />
-          <img src="/gps.svg" />
+          <img src="./public/image.svg" />
+          <img src="./public/gif.svg" />
+          <img src="./public/poll.svg" />
+          <img src="./public/smile.svg" />
+          <img src="./public/calendar.svg" />
+          <img src="./public/gps.svg" />
         </section>
         <section class="counter-and-button">
-
-          <!-- Criar o contador aqui -->
-
-          <img src="/add.svg" />
+          <div>
+            <svg>
+              <circle id="circle" cx="15" cy="15" r="12"></circle>
+            </svg>
+            <span id="number"></span>
+          </div>
+          <img src="./public/add.svg" />
           <button id="post-button">Post</button>
         </section>
       </div>
     </main>
-    <script type="module" src="/main.js"></script>
+    <script type="module" src="./main.js"></script>
 </body>
 
 </html>

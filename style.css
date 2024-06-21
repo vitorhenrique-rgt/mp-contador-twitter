@@ -98,6 +98,35 @@ textarea::placeholder {
   gap: 10px;
 }
 
+.counter-and-button div{
+  position: relative;
+  width: 30px;
+  height: 30px;
+}
+
+.counter-and-button svg{
+  width: 30px;
+  height: 30px;
+  
+  transform: rotate(-90deg);
+}
+
+.counter-and-button circle{
+  fill: none;
+  stroke-width: 2px;
+  stroke-dasharray: 76;
+  stroke-dashoffset: 1;
+}
+
+.counter-and-button span{
+  position: absolute;
+  font-size: 9px;
+  color: #a1a1a1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .counter-and-button img {
   width: 30px;
 }
